@@ -9,7 +9,7 @@ Makes summaries of a PGN chess game by drawing a board for a given interval of m
     image-0.png  image-2.png  image-4.png
    image-1.png  image-3.png  image-5.png
    ```
-   Images:
+### Images:
    ![Alt text](image-0.png?raw=true)
    ![Alt text](image-1.png?raw=true)
    ![Alt text](image-2.png?raw=true)
