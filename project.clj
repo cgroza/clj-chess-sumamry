@@ -1,5 +1,5 @@
-(defproject clj-chess-sumarry "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+(defproject clj-chess-sumarry "0.1"
+  :description "Chess summary generator."
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -8,6 +8,6 @@
                  [net.mikera/imagez "0.10.0"]
                  [org.clojure/core.match "0.3.0-alpha4"]
                  [clj-chess "0.3.1"]]
-  :main ^:skip-aot clj-chess-sumarry.core
+  :main clj-chess-sumarry.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

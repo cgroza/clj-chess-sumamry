@@ -1,4 +1,5 @@
  (ns clj-chess-sumarry.core
+   (:gen-class)
    (:use [mikera.image.core])
    (:require
     [clojure.core.match :refer [match]]
@@ -6,8 +7,7 @@
     [clojure.java.io :as io]
     [clojure.string :as s]
     [djy.char :as c]
-    [clj-chess.board :as b])
-   (:gen-class))
+    [clj-chess.board :as b]))
 
 (import '(java.awt.image AffineTransformOp)
         '(java.awt.geom AffineTransform)
@@ -99,4 +99,4 @@
    (let* [n (Integer/parseInt interval)
           drawn-fens (draw-nth-fen n (first (g/games-in-file in-file)))
           drawn-image-files (map vector (filenames out-file (count drawn-fens)) drawn-fens)]
-     (map save-image drawn-image-files))))
+     (doall (map save-image drawn-image-files)))))
