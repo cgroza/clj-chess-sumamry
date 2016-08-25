@@ -2,7 +2,7 @@
 Makes summaries of a PGN chess game by drawing a board for a given interval of moves.
 ## Usage
 ```
-$java -jar clj-chess-sumarry-0.1.0-standalone.jar interval game.pgn
+$java -jar clj-chess-sumarry-0.1.0-standalone.jar interval game.pgn output-base-name
 ```
 ## Examples
 ```

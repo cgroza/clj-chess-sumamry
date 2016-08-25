@@ -37,7 +37,8 @@
     \k :black-king
     \K :white-king
     \q :black-queen
-    \Q :white-queen))
+    \Q :white-queen
+    :else (throw (Exception. "Invalid FEN character."))))
 
 (defn digit-to-piece [d]
   "Parses digits corresponding to empty squares in a FEN. Returns a sequence
