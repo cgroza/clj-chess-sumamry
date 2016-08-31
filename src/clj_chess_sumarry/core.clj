@@ -16,6 +16,8 @@
         '(java.lang StringBuilder)
         '(java.awt.image BufferedImage))
 
+(def square-size "Size of board squares." 60)
+
 (def img-files "File names for piece images."
   ["empty.png" "bb.png"   "bk.png"  "bq.png"  "wb.png"   "wk.png"  "wq.png"
    "bkn.png"  "bp.png"  "br.png"  "wkn.png"  "wp.png"  "wr.png"])
@@ -71,7 +73,7 @@
     (.drawImage graphics piece-img
                 (AffineTransformOp.
                  (AffineTransform.) (AffineTransformOp/TYPE_BILINEAR))
-                (* file 60) (* rank 60))
+                (* file square-size) (* rank square-size))
     board-img))
 
 (defn draw-rank [board rank pieces]
